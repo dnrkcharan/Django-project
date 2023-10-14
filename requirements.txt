@@ -1,0 +1,7 @@
+django == 4.2.6
+psycopg == 3.1.12
+psycopg_binary == 2.9.9
+python-dotenv == 1.0.0
+
+Pillow == 10.0.1
+# add if any other requrements here.
