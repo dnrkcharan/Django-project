@@ -12,6 +12,20 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file in the current directory
+load_dotenv()
+
+import os
+
+database_name = os.getenv("DATABASE_NAME")
+database_user = os.getenv("DATABASE_USER")
+database_password = os.getenv("DATABASE_PASSWORD")
+database_host = os.getenv("DATABASE_HOST")
+database_port = os.getenv("DATABASE_PORT")
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -76,12 +90,24 @@ WSGI_APPLICATION = 'basicproject.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': database_name,
+        'USER': database_user,
+        'PASSWORD': database_password,
+        'HOST': database_host,
+        'PORT': database_port
+    }
+}
+
+=======
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
 
+>>>>>>> parent of 704c665 (Revert "intialise django project")
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
