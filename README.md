@@ -1,3 +1,6 @@
+Basically this Project helps the shop owners to manage their inventory shops. so that they make sure that every store contains each and every product.
+Based on the location they are going to make products.
+
 # Django-project
 
 --- All the below installtions and commands are related to MacOS. please change your commands if you are using other operationg system ---
