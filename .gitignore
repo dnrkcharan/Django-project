@@ -21,8 +21,8 @@ sdist/
 # Also, we can write the files which we want to ignore(not to push to git hub) in the future
 .DS_Store
 
-# telegram username.session will get created when you try to fetch them via client.
-dnrkcharan.session
+# ignore sqlite file
+db.sqlite
 
 # Virtual environment
 .venv
