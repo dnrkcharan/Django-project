@@ -90,7 +90,6 @@ WSGI_APPLICATION = 'basicproject.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': database_name,
         'USER': database_user,
@@ -99,15 +98,6 @@ DATABASES = {
         'PORT': database_port
     }
 }
-
-=======
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-
->>>>>>> parent of 704c665 (Revert "intialise django project")
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
